@@ -12,6 +12,7 @@
 
 // Deployment: 
 // git push -u origin master 
-// git add .
-// git commit -m 'added'
+//  cd "C:\Users\cathe\OneDrive\Desktop\My Projects\catherine-portfolio"
+// git commit -a
+// git push origin main
 

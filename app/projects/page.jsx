@@ -29,7 +29,7 @@ const projects = [
             {name: "Javascript"},
             {name: "Css"}
         ],
-        image: '/assets/work/WordSearch_game.png',
+        image: '/assets/work/WordSearch_Game.png',
         live: "https://catherinerodriquez04.github.io/AI-Arcade/wordSearch.html",
         youtube: "",
         github: "https://github.com/CatherineRodriquez04/AI-Arcade",
@@ -45,7 +45,7 @@ const projects = [
             {name: "Javascript"},
             {name: "Css"}
         ],
-        image: '/assets/work/TicTacToe_game.png',
+        image: '/assets/work/TicTacToe_Game.png',
         live: "https://catherinerodriquez04.github.io/AI-Arcade/TicTacToe.html",
         youtube: "",
         github: "https://github.com/CatherineRodriquez04/AI-Arcade",
