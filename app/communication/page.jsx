@@ -33,7 +33,7 @@ const coms = [
 import { motion } from 'framer-motion';
 
 const Communication = () => {
-    return <section className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0">
+    return <section className="min-h-[80vh] h-full flex flex-col justify-center py-12 xl:py-0">
         <div className="container mx-auto">
             <motion.div 
                 initial={{opacity: 0}}
