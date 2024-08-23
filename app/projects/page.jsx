@@ -23,7 +23,7 @@ const projects = [
         category: 'Fullstack',
         title: 'Word Search',
         description: 'This is an engaging Word Search game where players can compete against an AI to find hidden words within a grid. The game features a dynamic timer and intuitive UI, with the ability to highlight found words and track the progress. The AI randomly selects words, adding an extra layer of challenge. Customize your play with themes and enjoy a seamless experience.',
-        duration: 'May. 2024 - August 2024',
+        duration: 'May 2024 - Sept. 2024',
         stack: [
             {name: "Html"},
             {name: "Javascript"},
@@ -36,6 +36,21 @@ const projects = [
     },
     {
         num: '02',
+        category: 'Frontend',
+        title: 'Website Portfolio',
+        description: "I developed this website to showcase my portfolio, projects, and professional background, reflecting both my technical skills and design sensibilities. Using Framer Motion, I added smooth animations that enhance interactivity and visual appeal. The site is crafted to provide an engaging user experience, reflecting my skills in design and functionality. ",
+        duration: 'Aug. 2024 - Sept. 2024',
+        stack: [
+            {name: "Next.js"},
+            {name: "Tailwind.css"},
+        ],
+        image: '/assets/work/Portfolio.png',
+        live: "",
+        youtube: "",
+        github: "",
+    },
+    {
+        num: '03',
         category: 'Fullstack',
         title: 'Tic Tac Toe',
         description: 'This is a classic Tic Tac Toe game that allows players to play against each other, play against an AI, or watch two AI players compete against each other. The AI uses the minimax algorithm with alpha-beta pruning to determine the best moves. Select your game mode and enjoy a strategic battle on the grid.',
@@ -51,7 +66,7 @@ const projects = [
         github: "https://github.com/CatherineRodriquez04/AI-Arcade",
     },
     {
-        num: '03',
+        num: '04',
         category: 'Frontend',
         title: 'Baby Groot',
         description: "In this project, I used Python's Turtle Graphics to draw and animate Baby Groot. The process involved designing and coordinating intricate shapes, pushing the boundaries of programming as a medium for artistic expression.",
@@ -65,7 +80,7 @@ const projects = [
         github: "https://github.com/CatherineRodriquez04/Groot",
     },
     {
-        num: '04',
+        num: '05',
         category: 'Fullstack',
         title: 'Shift Reduce Parser',
         description: 'For my final project in CSC 4101, I developed a visual display of the step-by-step process of shift-reduce parsing, a key concept in compiler design. The project showcases how strings are parsed using production rules, a stack, an input buffer, a parsing table, and actions like shift, reduce, accept, and error.',
@@ -81,7 +96,7 @@ const projects = [
         github: "https://github.com/CatherineRodriquez04/ShiftReduceParser",
     },
     {
-        num: '05',
+        num: '06',
         category: 'Fullstack w/ Arduino',
         title: 'Save the Planet',
         description: "Save the Planet is a game where players must prevent an asteroid from hitting Earth by bouncing it on a movable bar. The game offers three modes that adjust the asteroid's speed. With a 30-second time limit, players face a Game Over if the asteroid passes the bar. A volume slider controls the sound and, when connected to an Arduino, adjusts the brightness of an LED light.",
