@@ -21,6 +21,23 @@ const projects = [
     {
         num: '01',
         category: 'Fullstack',
+        title: 'Tiger Dorm Defender',
+        description: 'I led the design for a project during Geaux Engineering, where students developed a dorm security system to replace the need for a physical Tiger Card. The application allows students to securely enter their dorms using a digital method, reducing the risk of being locked out if they forget their card. The system simulates real-time dorm access, ensuring both convenience and security for users.',
+        duration: 'Aug. 2024 -> within 24 hrs',
+        stack: [
+            {name: "MySQL"},
+            {name: "Node.js with Express"},
+            {name: "React.js"},
+            {name: "Tailwind.css"}
+        ],
+        image: '/assets/work/TigerDormDefender.png',
+        live: "",
+        youtube: "https://youtu.be/erDOc3aKloE",
+        github: "https://github.com/CatherineRodriquez04/Tiger_Dorm_Defender",
+    },
+    {
+        num: '02',
+        category: 'Fullstack',
         title: 'Word Search',
         description: 'This is an engaging Word Search game where players can compete against an AI to find hidden words within a grid. The game features a dynamic timer and intuitive UI, with the ability to highlight found words and track the progress. The AI randomly selects words, adding an extra layer of challenge. Customize your play with themes and enjoy a seamless experience.',
         duration: 'May 2024 - Sept. 2024',
@@ -35,7 +52,7 @@ const projects = [
         github: "https://github.com/CatherineRodriquez04/AI-Arcade",
     },
     {
-        num: '02',
+        num: '03',
         category: 'Frontend',
         title: 'Website Portfolio',
         description: "I developed this website to showcase my portfolio, projects, and professional background, reflecting both my technical skills and design sensibilities. Using Framer Motion, I added smooth animations that enhance interactivity and visual appeal. The site is crafted to provide an engaging user experience, reflecting my skills in design and functionality. ",
@@ -50,7 +67,7 @@ const projects = [
         github: "",
     },
     {
-        num: '03',
+        num: '04',
         category: 'Fullstack',
         title: 'Tic Tac Toe',
         description: 'This is a classic Tic Tac Toe game that allows players to play against each other, play against an AI, or watch two AI players compete against each other. The AI uses the minimax algorithm with alpha-beta pruning to determine the best moves. Select your game mode and enjoy a strategic battle on the grid.',
@@ -66,7 +83,7 @@ const projects = [
         github: "https://github.com/CatherineRodriquez04/AI-Arcade",
     },
     {
-        num: '04',
+        num: '05',
         category: 'Frontend',
         title: 'Baby Groot',
         description: "In this project, I used Python's Turtle Graphics to draw and animate Baby Groot. The process involved designing and coordinating intricate shapes, pushing the boundaries of programming as a medium for artistic expression.",
@@ -76,11 +93,11 @@ const projects = [
         ],
         image: '/assets/work/Groot.png',
         live: "",
-        youtube: "",
+        youtube: "https://youtu.be/H38LkT6t-aQ",
         github: "https://github.com/CatherineRodriquez04/Groot",
     },
     {
-        num: '05',
+        num: '06',
         category: 'Fullstack',
         title: 'Shift Reduce Parser',
         description: 'For my final project in CSC 4101, I developed a visual display of the step-by-step process of shift-reduce parsing, a key concept in compiler design. The project showcases how strings are parsed using production rules, a stack, an input buffer, a parsing table, and actions like shift, reduce, accept, and error.',
@@ -92,11 +109,11 @@ const projects = [
         ],
         image: '/assets/work/ShiftReduceParser.png',
         live: "https://catherinerodriquez04.github.io/ShiftReduceParser/",
-        youtube: "",
+        youtube: "https://youtu.be/0FaiY7LtoEI",
         github: "https://github.com/CatherineRodriquez04/ShiftReduceParser",
     },
     {
-        num: '06',
+        num: '07',
         category: 'Fullstack w/ Arduino',
         title: 'Save the Planet',
         description: "Save the Planet is a game where players must prevent an asteroid from hitting Earth by bouncing it on a movable bar. The game offers three modes that adjust the asteroid's speed. With a 30-second time limit, players face a Game Over if the asteroid passes the bar. A volume slider controls the sound and, when connected to an Arduino, adjusts the brightness of an LED light.",
@@ -110,7 +127,7 @@ const projects = [
         ],
         image: '/assets/work/SavePlanet.png',
         live: "https://catherinerodriquez04.github.io/Final-Project-CSC-2463/",
-        youtube: "",
+        youtube: "https://youtu.be/NFk1yFw7Tbw",
         github: "https://github.com/CatherineRodriquez04/Final-Project-CSC-2463",
     }
 ];
@@ -251,11 +268,14 @@ const Projects = () => {
                                     </div>
                                 </SwiperSlide>;
                             })}
-                            {/* slider buttons */}
-                            <WorkSliderBtns containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none" 
-                                btnsStyles="xl:border xl:border-accent xl:bg-transparent bg-accent text-white rounded-full xl:text-black hover:bg-accent xl:hover:text-white text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all" 
-                            />
+                            <div>
+                                {/* slider buttons */}
+                                <WorkSliderBtns containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-[0px] z-20 w-full justify-between xl:w-max xl:justify-none" 
+                                    btnsStyles="xl:border xl:border-accent xl:bg-transparent bg-accent text-white rounded-full xl:text-black hover:bg-accent xl:hover:text-white text-primary text-[22px] w-[44px] h-[44px] xl:w-[53px] xl:h-[53px] flex justify-center items-center transition-all" 
+                                />
+                            </div>
                         </Swiper>
+                        <p className="xl:relative text-accent xl:right-[-365px] xl:bottom-[40px] bottom-[0px]">Swipe for More Projects</p>
                     </div>
                 </div>
             </div>

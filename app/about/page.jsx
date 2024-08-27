@@ -62,8 +62,8 @@ const experience = {
             company: "Deloitte",
             position: "Cyber and Strategic Risk Intern",
             duration: "Jun. 2024 - Aug. 2024",
-            description1: 'Collaborated with AT&T to implement Multi-Factor Authentication (MFA) solutions, enhancing security protocols. ',
-            description2: 'Assisted in the analysis and evaluation of client security frameworks to identify and mitigate potential risks.'
+            description1: 'Partnered with AT&T to deploy multifactor authentication (MFA) solutions, significantly strengthening security protocols and safeguarding sensitive data. ',
+            description2: 'Led the analysis and evaluation of client security frameworks, pinpointing vulnerabilities and crafting comprehensive strategies to address and mitigate potential risks, strengthening the security posture. '
         },
         {
             company: "Louisiana State University",
