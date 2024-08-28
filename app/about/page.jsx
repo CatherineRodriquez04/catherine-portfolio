@@ -137,6 +137,12 @@ const education = {
         },
         {
             institution: "SoloLearn",
+            degree: "Introduction to SQL",
+            info: "Certification",
+            duration: "August 2024"
+        },
+        {
+            institution: "SoloLearn",
             degree: "Introduction to Python",
             info: "Certification",
             duration: "June 2024"
@@ -169,51 +175,63 @@ const skills = {
     skillList: [
         {
             icon: <FaReact />,
-            name: 'react.js'
+            name: 'react.js',
+            level: 'Experienced'
         },
         {
             icon: <SiPython />,
-            name: 'python'
+            name: 'python',
+            level: 'Intermediate'
         },
         {
             icon: <FaJava />,
-            name: 'java'
+            name: 'java',
+            level: 'Experienced'
         },
         {
             icon: <SiCplusplus />,
-            name: 'C++'
+            name: 'C++',
+            level: 'Experienced'
         },
         {
             icon: <SiCsharp />,
-            name: 'C#'
+            name: 'C#',
+            level: 'Beginner'
         },
         {
             icon: <FaJs />,
-            name: 'javascript'
+            name: 'javascript',
+            level: 'Experienced'
         },
         {
             icon: <FaHtml5 />,
-            name: 'html'
+            name: 'html',
+            level: 'Experienced'
         },
         {
             icon: <DiDatabase />,
-            name: 'SQL'
+            name: 'SQL',
+            level: 'Intermediate'
         },
         {
             icon: <FaLinux />,
-            name: 'Linux'
+            name: 'Linux',
+            level: 'Beginner'
         },
         {
             icon: <FaCss3 />,
-            name: 'css'
+            name: 'css',
+            level: 'Experienced'
         },
         {
             icon: <SiTailwindcss />,
-            name: 'tailwind.css'
+            name: 'tailwind.css',
+            level: 'Experienced'
         },
         {
             icon: <FaNodeJs />,
-            name: 'node.js'
+            name: 'node.js',
+            level: 'Intermediate'
         },
     ]
 };
@@ -350,7 +368,8 @@ const Resume = () => {
                                                         <div className='text-6xl group-hover:text-accent transition all duration-300 group-hover:scale-105'>{skill.icon}</div>
                                                     </TooltipTrigger>
                                                     <TooltipContent>
-                                                        <p className='capitalize'>{skill.name}</p>
+                                                        <p className='capitalize text-accent font-semibold text-center'>{skill.name}<br></br></p>
+                                                        <p className='text-blue-600 capitalize'>{skill.level}</p>
                                                     </TooltipContent>
                                                 </Tooltip>
                                             </TooltipProvider>

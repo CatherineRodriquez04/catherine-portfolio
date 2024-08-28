@@ -22,11 +22,11 @@ const projects = [
         num: '01',
         category: 'Fullstack',
         title: 'Tiger Dorm Defender',
-        description: 'I led the design for a project during Geaux Engineering, where students developed a dorm security system to replace the need for a physical Tiger Card. The application allows students to securely enter their dorms using a digital method, reducing the risk of being locked out if they forget their card. The system simulates real-time dorm access, ensuring both convenience and security for users.',
+        description: 'I led the design for a project during Geaux Engineering, where freshmen developed a dorm security system to replace the need for a physical Tiger Card. This application pushed freshmen to quickly research and learn a variety coding languages to implement a project in a competitive environment. They sought guidance from me throughout different steps of the development process and increased their skills from little to no experience to above the average for incoming freshmen.',
         duration: 'Aug. 2024 -> within 24 hrs',
         stack: [
             {name: "MySQL"},
-            {name: "Node.js with Express"},
+            {name: "Node.js"},
             {name: "React.js"},
             {name: "Tailwind.css"}
         ],
@@ -48,7 +48,7 @@ const projects = [
         ],
         image: '/assets/work/WordSearch_Game.png',
         live: "https://catherinerodriquez04.github.io/AI-Arcade/wordSearch.html",
-        youtube: "",
+        youtube: "https://youtu.be/MXng6v8z4mk",
         github: "https://github.com/CatherineRodriquez04/AI-Arcade",
     },
     {
@@ -62,9 +62,9 @@ const projects = [
             {name: "Tailwind.css"},
         ],
         image: '/assets/work/Portfolio.png',
-        live: "",
+        live: "catrodriquez.dev",
         youtube: "",
-        github: "",
+        github: "https://github.com/CatherineRodriquez04/catherine-portfolio",
     },
     {
         num: '04',
@@ -79,7 +79,7 @@ const projects = [
         ],
         image: '/assets/work/TicTacToe_Game.png',
         live: "https://catherinerodriquez04.github.io/AI-Arcade/TicTacToe.html",
-        youtube: "",
+        youtube: "https://youtu.be/E6ffX_l9qg0",
         github: "https://github.com/CatherineRodriquez04/AI-Arcade",
     },
     {
@@ -275,7 +275,7 @@ const Projects = () => {
                                 />
                             </div>
                         </Swiper>
-                        <p className="xl:relative text-accent xl:right-[-365px] xl:bottom-[40px] bottom-[0px]">Swipe for More Projects</p>
+                        <p className="flex justify-center relative text-accent text-center xl:absolute xl:right-[200px] xl:bottom-[85px] bottom-[40px]">Use the above arrows to explore more projects</p>
                     </div>
                 </div>
             </div>

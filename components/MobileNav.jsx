@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from 'react';
 import {Sheet, SheetContent, SheetTrigger} from '@/components/ui/sheet';
 import { usePathname } from 'next/navigation';
 import Link from "next/link";
@@ -30,15 +31,21 @@ const links = [
 
 
 const MobileNav = () => {
+    const [isOpen, setIsOpen] = useState(false);
     const pathname = usePathname();
-    return <Sheet>
-        <SheetTrigger className="flex justify-center items-center">
+
+    const handleLinkClick = () => {
+        setIsOpen(false); // Close the sheet
+    };
+
+    return <Sheet open={isOpen} onOpenChange={setIsOpen}>
+        <SheetTrigger className="flex justify-center items-center" onClick={() => setIsOpen(true)}>
             <CiMenuFries className="text-[32px] text-accent" />
         </SheetTrigger>
         <SheetContent  className="flex flex-col">
             {/* logo */}
             <div className="mt-32 mb-40 text-center text-2xl">
-                <Link href="/">
+                <Link href="/" onClick={handleLinkClick}>
                     <h1 className="text-4xl font-semibold">Cat<span className="text-accent">.</span></h1>
                 </Link>
             </div>
@@ -49,7 +56,9 @@ const MobileNav = () => {
                     return <Link 
                             href={link.path} 
                             key={link.path} 
-                            className={`${link.path === pathname && "text-accent border-b-2 border-accent"} text-xl capitalize hover:text-accent transition-all`}>
+                            className={`${link.path === pathname && "text-accent border-b-2 border-accent"} text-xl capitalize hover:text-accent transition-all`}
+                            onClick={handleLinkClick}
+                            >
                             {link.name}
                         </Link>
                 })}
