@@ -19,10 +19,10 @@ const links = [
         name: 'projects',
         path: '/projects',
     },
-    {
-        name: 'communication',
-        path: '/communication',
-    },
+    // {
+    //     name: 'communication',
+    //     path: '/communication',
+    // },
     {
         name: 'contact',
         path: '/contact',
