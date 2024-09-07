@@ -21,6 +21,23 @@ const projects = [
     {
         num: '01',
         category: 'Fullstack',
+        title: 'Daily Gratitude Journal',
+        description: 'A journal application that helps users find inspiration by reflecting on their daily experiences. It offers personalized accounts for secure, private journaling and aims to provide a sense of peace and perspective through daily reflections.',
+        duration: 'Aug. 2024 - Sept. 2024',
+        stack: [
+            {name: "Next.js"},
+            {name: "React.js"},
+            {name: "Tailwind.css"},
+            {name: "Firebase"}
+        ],
+        image: '/assets/work/Journal.png',
+        live: "https://journal.catrodriquez.dev/",
+        youtube: "https://youtu.be/zP1t9r6HJHQ",
+        github: "https://github.com/CatherineRodriquez04/gratitude-journal"
+    },
+    {
+        num: '02',
+        category: 'Fullstack',
         title: 'Tiger Dorm Defender',
         description: 'I led the design for a project during Geaux Engineering, where freshmen developed a dorm security system to replace the need for a physical Tiger Card. This application pushed freshmen to quickly research and learn a variety coding languages to implement a project in a competitive environment. They sought guidance from me throughout different steps of the development process and increased their skills from little to no experience to above the average for incoming freshmen.',
         duration: 'Aug. 2024 -> within 24 hrs',
@@ -36,7 +53,7 @@ const projects = [
         github: "https://github.com/CatherineRodriquez04/Tiger_Dorm_Defender",
     },
     {
-        num: '02',
+        num: '03',
         category: 'Fullstack',
         title: 'Word Search',
         description: 'This is an engaging Word Search game where players can compete against an AI to find hidden words within a grid. The game features a dynamic timer and intuitive UI, with the ability to highlight found words and track the progress. The AI randomly selects words, adding an extra layer of challenge. Customize your play with themes and enjoy a seamless experience.',
@@ -52,7 +69,7 @@ const projects = [
         github: "https://github.com/CatherineRodriquez04/AI-Arcade",
     },
     {
-        num: '03',
+        num: '04',
         category: 'Frontend',
         title: 'Website Portfolio',
         description: "I developed this website to showcase my portfolio, projects, and professional background, reflecting both my technical skills and design sensibilities. Using Framer Motion, I added smooth animations that enhance interactivity and visual appeal. The site is crafted to provide an engaging user experience, reflecting my skills in design and functionality. ",
@@ -67,7 +84,7 @@ const projects = [
         github: "https://github.com/CatherineRodriquez04/catherine-portfolio",
     },
     {
-        num: '04',
+        num: '05',
         category: 'Fullstack',
         title: 'Tic Tac Toe',
         description: 'This is a classic Tic Tac Toe game that allows players to play against each other, play against an AI, or watch two AI players compete against each other. The AI uses the minimax algorithm with alpha-beta pruning to determine the best moves. Select your game mode and enjoy a strategic battle on the grid.',
@@ -83,7 +100,7 @@ const projects = [
         github: "https://github.com/CatherineRodriquez04/AI-Arcade",
     },
     {
-        num: '05',
+        num: '06',
         category: 'Frontend',
         title: 'Baby Groot',
         description: "In this project, I used Python's Turtle Graphics to draw and animate Baby Groot. The process involved designing and coordinating intricate shapes, pushing the boundaries of programming as a medium for artistic expression.",
@@ -97,7 +114,7 @@ const projects = [
         github: "https://github.com/CatherineRodriquez04/Groot",
     },
     {
-        num: '06',
+        num: '07',
         category: 'Fullstack',
         title: 'Shift Reduce Parser',
         description: 'For my final project in CSC 4101, I developed a visual display of the step-by-step process of shift-reduce parsing, a key concept in compiler design. The project showcases how strings are parsed using production rules, a stack, an input buffer, a parsing table, and actions like shift, reduce, accept, and error.',
@@ -113,7 +130,7 @@ const projects = [
         github: "https://github.com/CatherineRodriquez04/ShiftReduceParser",
     },
     {
-        num: '07',
+        num: '08',
         category: 'Fullstack w/ Arduino',
         title: 'Save the Planet',
         description: "Save the Planet is a game where players must prevent an asteroid from hitting Earth by bouncing it on a movable bar. The game offers three modes that adjust the asteroid's speed. With a 30-second time limit, players face a Game Over if the asteroid passes the bar. A volume slider controls the sound and, when connected to an Arduino, adjusts the brightness of an LED light.",
@@ -129,7 +146,7 @@ const projects = [
         live: "https://catherinerodriquez04.github.io/Final-Project-CSC-2463/",
         youtube: "https://youtu.be/NFk1yFw7Tbw",
         github: "https://github.com/CatherineRodriquez04/Final-Project-CSC-2463",
-    }
+    },
 ];
 
 const Projects = () => {
