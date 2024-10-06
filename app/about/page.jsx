@@ -471,7 +471,7 @@ const Resume = () => {
                                 <div className='flex items-center justify-center mb-2 mt-4'>
                                     <Image src={Game} alt="Game" width={375} height={375} className='rounded-xl'/>
                                 </div>
-                                <div className='bg-[#565f69] mt-2 mb-6 rounded-xl py-2 px-5 flex flex-col justify-center items-center lg:items-start' >
+                                <div className='bg-[#565f69] mt-3 mb-6 rounded-xl py-2 px-5 flex flex-col justify-center items-center lg:items-start' >
                                     <p>During my spring 2024 semester, I helped organize a cybersecurity workshop called TigerByte, under Professor Nash Mahmoud, for LSU students outside the computer science department. We developed the workshop from scratch, covering topics like cryptography, steganography, CTFs, and password protection. I created a File Game summarizing these topics, which featured ten progressively challenging stages for group participation. It was rewarding to see participants engage with the challenges while learning about cybersecurity. This experience not only raised awareness but also allowed me to connect with students across different majors and share my passion for computer science.</p>
                                 </div>
 
