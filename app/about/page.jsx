@@ -20,6 +20,21 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger} from '@/compo
 
 import { ScrollArea } from '@/components/ui/scroll-area';
 
+// Highlight Images
+import Image from 'next/image';
+import Chicago from '@/public/assets/highlights/chicago.jpg';
+import DSkate from '@/public/assets/highlights/DSkate.jpg';
+import Group from '@/public/assets/highlights/TigerByteG.jpg';
+import Game from '@/public/assets/highlights/Game.jpg';
+import KiddosT from '@/public/assets/highlights/KiddosTiger.jpg';
+import Detroit from '@/public/assets/highlights/Detroit.png';
+import Kansas from '@/public/assets/highlights/Kansas.jpg';
+import Design from '@/public/assets/highlights/DesignGroup.jpg';
+import AllTeams from '@/public/assets/highlights/AllTeams.jpg';
+import BREvent from '@/public/assets/highlights/BREvent.jpg';
+import BREvent2 from '@/public/assets/highlights/BREvent2.jpg';
+
+
 // about data
 const about = {
     title: 'About Me',
@@ -248,6 +263,12 @@ const awards = {
     description: 'fix later...'
 }
 
+// highlights data
+const highlights = {
+    title: 'My Highlights',
+    description: 'This area showcase key experiences and accomplishments that highlight my skills in communication, leadership, and collaboration. These highlights reflect my ability to engage with audiences through presentations, mentor fellow students, and contribute effectively to team projects.'
+}
+
 const Resume = () => {
     const [expandedIndex, setExpandedIndex] = useState(null);  // Added this state to track which item is expanded
 
@@ -269,6 +290,7 @@ const Resume = () => {
                         <TabsTrigger value="experience">Experience</TabsTrigger>
                         <TabsTrigger value="education">Education</TabsTrigger>
                         <TabsTrigger value="skills">Skills</TabsTrigger>
+                        <TabsTrigger value="highlights">Highlights</TabsTrigger>
                         {/* <TabsTrigger value="awards">Awards</TabsTrigger>
                         <TabsTrigger value="goals">Goals</TabsTrigger> */}
                     </TabsList>
@@ -382,7 +404,7 @@ const Resume = () => {
 
 
                         {/* about */}
-                        <TabsContent value='about' className='w-full text-center xl:text-left'>
+                        <TabsContent value='about' className='w-full h-full text-center xl:text-left'>
                         <div className='flex flex-col gap-[30px]'>
                                 <h3 className='text-4xl font-bold'>{about.title}</h3>
                             <div className='bg-[#565f69] max-w-[645px] rounded-xl py-2 px-5 flex flex-col justify-center items-center lg:items-start' >
@@ -399,6 +421,86 @@ const Resume = () => {
                                 </ul>
                                 <Photo6 />
                                 
+                            </div>
+                        </TabsContent>
+
+                        {/* highlights */}
+                        <TabsContent value='highlights' className='w-full h-full text-center xl:text-left'>
+                        <div className='flex flex-col gap-[30px]'>
+                            <div className='flex flex-col gap-[30px] text-center xl:text-left'>
+                                <h3 className='text-4xl font-bold'>{highlights.title}</h3>
+                                <p className='max-w-[750px] text-white/80 mx-auto xl:mx-0'>{highlights.description}</p>
+                            </div>
+
+                            <ScrollArea className='xl:h-[400px] h-[500px]'>
+                                {/* Deloitte Year 2 */}
+                                <div className='flex flex-col sm:flex-row gap-4 items-center justify-center'>
+                                    <div className='flex-1 mb-2'>
+                                        <Image src={Chicago} alt="Chicago Orientation" width={350} height={350} className='rounded-xl'/>
+                                    </div>
+                                    <div className='flex-1 mb-2'>
+                                        <Image src={DSkate} alt="Deloitte Skate Board Event" width={350} height={350} className='rounded-xl'/>
+                                    </div>
+                                </div>
+                                <div className='bg-[#565f69] mt-2 mb-6 rounded-xl py-2 px-5 flex flex-col justify-center items-center lg:items-start' >
+                                    <p>As a Cyber and Strategic Risk Intern at Deloitte, I presented cybersecurity improvement ideas to my client, AT&T, while also networking with talented professionals in the field. Additionally, I contributed to a project that involved designing and building skateboards, helmets, and cards for underprivileged children, donated to the 4DWN Project to inspire them to embrace their potential. This initiative aligned with Deloitte&amp;s theme of growth, showcasing the importance of nurturing unique identities.</p>
+                                </div>
+
+                                {/* Geaux Engineering 2024 */}
+                                <div className='flex flex-col sm:flex-row gap-4 items-center justify-center'>
+                                    <div className='flex-1 mb-2'>
+                                        <Image src={Design} alt="Students in my Design Group" width={360} height={360} className='rounded-xl'/>
+                                    </div>
+                                    <div className='flex-1 mb-2'>
+                                        <Image src={AllTeams} alt="All the freshman participating in Geaux Engineering 2024" width={335} height={335} className='rounded-xl'/>
+                                    </div>
+                                </div>
+                                <div className='bg-[#565f69] mt-2 mb-6 rounded-xl py-2 px-5 flex flex-col justify-center items-center lg:items-start' >
+                                    <p>I had an amazing experience at Geaux Engineering as the design leader for the computer science project themed LSU-opoly. I presented the project to the freshmen and guided them in creating a security system that eliminates the inconvenience of forgotten Tiger Cards, allowing easy registration and unlocking of their dorms. It was inspiring to see my design come to life through their creativity, and I enjoyed assisting them with any questions throughout this rewarding journey.</p>
+                                </div>
+
+                                {/* TigerByte */}
+                                <div className='flex flex-col sm:flex-row gap-4 items-center justify-center'>
+                                    <div className='flex-1 mb-2'>
+                                        <Image src={Group} alt="TigerByte Organizers" width={335} height={335} className='rounded-xl'/>
+                                    </div>
+                                    <div className='flex-1 mb-2'>
+                                        <Image src={KiddosT} alt="TigerByte-Helping Students" width={325} height={325} className='rounded-xl'/>
+                                    </div>
+                                </div>
+                                <div className='flex items-center justify-center'>
+                                    <Image src={Game} alt="Game" width={375} height={375} className='rounded-xl'/>
+                                </div>
+                                <div className='bg-[#565f69] mt-2 mb-6 rounded-xl py-2 px-5 flex flex-col justify-center items-center lg:items-start' >
+                                    <p>During my spring 2024 semester, I helped organize a cybersecurity workshop called TigerByte, under Professor Nash Mahmoud, for LSU students outside the computer science department. We developed the workshop from scratch, covering topics like cryptography, steganography, CTFs, and password protection. I created a File Game summarizing these topics, which featured ten progressively challenging stages for group participation. It was rewarding to see participants engage with the challenges while learning about cybersecurity. This experience not only raised awareness but also allowed me to connect with students across different majors and share my passion for computer science.</p>
+                                </div>
+
+                                {/* Corporate Chick-fil-A */}
+                                <div className='flex flex-col sm:flex-row gap-4 items-center justify-center'>
+                                    <div className='flex-1 mb-2'>
+                                        <Image src={Kansas} alt="Kansas City Grand Opening" width={350} height={350} className='rounded-xl'/>
+                                    </div>
+                                    <div className='flex-1 mb-2'>
+                                        <Image src={Detroit} alt="Detroit Grand Opening" width={340} height={340} className='rounded-xl'/>
+                                    </div>
+                                </div>
+                                <div className='bg-[#565f69] mt-2 mb-6 rounded-xl py-2 px-5 flex flex-col justify-center items-center lg:items-start' >
+                                    <p>Words cannot express the impact my Chick-fil-A team has had on my life. I have learned the importance of giving my all, embracing challenges with a positive outlook, and supporting one another during stressful moments. Training new team members at corporate grand openings in Detroit, Michigan, and Kansas City, Kansas, has greatly enhanced my communication skills and taught me how to convey information effectively to diverse audiences. I&amp;m proud to have contributed to our success in breaking hometown records, and I look forward to carrying these invaluable lessons into the future.</p>
+                                </div>
+
+                                {/* STEM Day for SPM */}
+                                <div className='flex flex-col sm:flex-row gap-4 items-center justify-center'>
+                                    <div className='flex-1 mb-2'>
+                                        <Image src={BREvent} alt="STEM Day " width={350} height={350} className='rounded-xl'/>
+                                    </div>
+                                    <div className='flex-1 mb-2'>
+                                        <Image src={BREvent2} alt="STEM Day " width={335} height={335} className='rounded-xl'/>
+                                    </div>
+                                </div>
+                                <div className='bg-[#565f69] mt-2 mb-6 rounded-xl py-2 px-5 flex flex-col justify-center items-center lg:items-start' >
+                                    <p>I had the pleasure of mentoring middle schoolers during STEM Day at Baton Rouge Magnet High School, where I introduced them to the wonders of snap circuits. It was exhilarating to witness their enthusiasm as they engaged in hands-on activities in science, technology, engineering, and mathematics. As a representative of the Society of Peer Mentors (SPM), I am committed to fostering a love of learning among the next generation of innovators.</p>
+                                </div>
+                            </ScrollArea>   
                             </div>
                         </TabsContent>
                     </div>
