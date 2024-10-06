@@ -468,7 +468,7 @@ const Resume = () => {
                                         <Image src={KiddosT} alt="TigerByte-Helping Students" width={325} height={325} className='rounded-xl'/>
                                     </div>
                                 </div>
-                                <div className='flex items-center justify-center'>
+                                <div className='flex items-center justify-center mb-2'>
                                     <Image src={Game} alt="Game" width={375} height={375} className='rounded-xl'/>
                                 </div>
                                 <div className='bg-[#565f69] mt-2 mb-6 rounded-xl py-2 px-5 flex flex-col justify-center items-center lg:items-start' >
