@@ -443,7 +443,7 @@ const Resume = () => {
                                     </div>
                                 </div>
                                 <div className='bg-[#565f69] mt-2 mb-6 rounded-xl py-2 px-5 flex flex-col justify-center items-center lg:items-start' >
-                                    <p>As a Cyber and Strategic Risk Intern at Deloitte, I presented cybersecurity improvement ideas to my client, AT&T, while also networking with talented professionals in the field. Additionally, I contributed to a project that involved designing and building skateboards, helmets, and cards for underprivileged children, donated to the 4DWN Project to inspire them to embrace their potential. This initiative aligned with Deloitte&amp;s theme of growth, showcasing the importance of nurturing unique identities.</p>
+                                    <p>As a Cyber and Strategic Risk Intern at Deloitte, I presented cybersecurity improvement ideas to my client, AT&T, while also networking with talented professionals in the field. Additionally, I contributed to a project that involved designing and building skateboards, helmets, and cards for underprivileged children, donated to the 4DWN Project to inspire them to embrace their potential. This initiative aligned with Deloitte&apos;s theme of growth, showcasing the importance of nurturing unique identities.</p>
                                 </div>
 
                                 {/* Geaux Engineering 2024 */}
@@ -485,7 +485,7 @@ const Resume = () => {
                                     </div>
                                 </div>
                                 <div className='bg-[#565f69] mt-2 mb-6 rounded-xl py-2 px-5 flex flex-col justify-center items-center lg:items-start' >
-                                    <p>Words cannot express the impact my Chick-fil-A team has had on my life. I have learned the importance of giving my all, embracing challenges with a positive outlook, and supporting one another during stressful moments. Training new team members at corporate grand openings in Detroit, Michigan, and Kansas City, Kansas, has greatly enhanced my communication skills and taught me how to convey information effectively to diverse audiences. I&amp;m proud to have contributed to our success in breaking hometown records, and I look forward to carrying these invaluable lessons into the future.</p>
+                                    <p>Words cannot express the impact my Chick-fil-A team has had on my life. I have learned the importance of giving my all, embracing challenges with a positive outlook, and supporting one another during stressful moments. Training new team members at corporate grand openings in Detroit, Michigan, and Kansas City, Kansas, has greatly enhanced my communication skills and taught me how to convey information effectively to diverse audiences. I&apos;m proud to have contributed to our success in breaking hometown records, and I look forward to carrying these invaluable lessons into the future.</p>
                                 </div>
 
                                 {/* STEM Day for SPM */}
